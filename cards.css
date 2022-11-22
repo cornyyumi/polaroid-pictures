@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    background-color: gray;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card-group{
+    aspect-ratio: 1/1;
+    width: 35vmin;
+
+}
+
+.card{
+    aspect-ratio: 1/1;
+    width: 35vmin;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transition: 1s, transform 0.8s;
+    display: grid;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 90px;
+    padding-top: 8px;
+}
+
+.card-image{
+    background-color: lightblue;
+    width: 90%;
+    height: 28vh;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.card-image img{
+    width: 100%;
+}
+
+.card-text{
+    width: 100%;
+}
+
+.card-text p{
+    margin: 0 5% 2% 5%;
+    font-family: 'Gaegu', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #CF9FFF;;
+}
+
+.card-group:hover .card:nth-child(1){
+    transform: translate(-60%) rotate(-15deg);
+}
+
+.card-group:hover .card:nth-child(2){
+    transform: translate(0%)  translateY(-10%);
+}
+
+.card-group:hover .card:nth-child(3){
+    transform: translate(60%) rotate(15deg);
+}
+
+
+.card-group:hover .card:nth-child(1):hover{
+    z-index: 100;
+    transform: translate(-60%) rotate(-5deg);
+}
+
+.card-group:hover .card:nth-child(2):hover{
+    z-index: 100;
+    transform: rotate(-5deg);
+}
+
+.card-group:hover .card:nth-child(3):hover{
+    z-index: 100;
+    transform: translate(50%) rotate(5deg);
+
+}
