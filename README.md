@@ -1,2 +1,1 @@
-# cards-js
-Simple JS project
+Simple html/css to show images as polaroid pictures
